@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+    <title>Nizael Valente</title>
+</head>
+
+<body id="body">
+
+    <header class="header-body">
+        <h1 class="title-body"><span class="name">Nizael</span> <span class="lastname">Valente</span></h1>
+        <nav class="nav-body " id="nav-body">
+            <ul class="menu-body">
+                <li class="item-menu-body" title="main-body">Inicio</li>
+                <li class="item-menu-body" title="projects-main">Projetos</li>
+                <li class="item-menu-body" title="contacts">Contatos</li>
+                <li class="item-menu-body" title="about-me">Sobre Mim</li>
+            </ul>
+        </nav>
+        <div class="button-menu-body" id="button-menu-body">
+            |||
+        </div>
+    </header>
+
+    <main class="main-body" id="main-body">
+        <div class="home-main">
+            <div class="home-content">
+                <h2 class="title-home">Ola, Sou Nizael Valente</h2>
+                <div class="animation-content">
+                    <h3 class="description-home">
+                        <span>DESENVOLVEDOR WEB</span>
+                        <br>
+                        FRONT-END E BACK-END
+                    </h3>
+                    <div class="square">
+
+                    </div>
+                </div>
+                <h3 class="about-projects">
+                    Tenho alguns projetos, clique no botão para conferir.
+                </h3>
+                <div class="buttons-home">
+                    <button class="button-home" id="button-my-projects">Meus Projetos</button>
+                    <button class="button-home" id="button-about-me">Sobre Mim</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-main" id="projects-main">
+            <header class="header-section">
+                <h2 class="title-section">Meus Projetos</h2>
+                <div class="arrow"></div>
+            </header>
+            <div class="content-projects">
+                <div class="car-project">
+                    <img src="./assets/images/api-rest-01.png" alt="" class="image-project">
+                    <div class="card-content">
+                        <h4 class="title-card">API REST - VENDA DE PACOTES DE VIAGENS</h4>
+                        <div class="description-content">
+                            <p class="description-card">Este projeto consiste em uma API REST voltada para venda de
+                                pacotes de viagens.</p>
+                            <p class="description-card">Dispõe de <strong>Autenticação</strong> para usuário e <strong>
+                                    Criptografia</strong></p>
+                        </div>
+
+                        <h4 class="sub-title-card">As tecnologias usadas em seu desenvolvimento foram:</h4>
+
+                        <ul class="list-technology">
+                            <li>Nodejs</li>
+                            <li>MongoDB</li>
+                            <li>bcrypt(Criptografia)</li>
+                            <li>jwt(Autenticação)</li>
+                        </ul>
+                        <div class="links">
+                            <a class="link" href="https://github.com/nizaelvalente/agencia-de-viagem-api-nodejs"
+                                target="_blank">Ver no GitHub - Back</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-project">
+                    <img src="./assets/images/agendamento-01.png" alt="" class="image-project">
+                    <div class="card-content">
+                        <h4 class="title-card">APLICAÇÃO PARA AGENDAMENTO DE EXPEDIENTE</h4>
+                        <div class="description-content">
+                            <p class="description-card">Este projeto consiste em uma APLICAÇÃO completa com FRONT-END e
+                                BACK-END para agendar
+                                expediente.</p>
+                            <p class="description-card">Com ele é possivel o funcionáfio escolher a filial e a estação
+                                de trabalho.</p>
+                        </div>
+
+                        <h4 class="sub-title-card">As tecnologias usadas em seu desenvolvimento foram:</h4>
+
+                        <ul class="list-technology">
+                            <li>Nodejs</li>
+                            <li>MongoDB</li>
+                            <li>Javascript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <div class="links">
+                            <a class="link" href="https://github.com/nizaelvalente/landing_page_front"
+                                target="_blank">Ver no GitHub - Front</a>
+                            <a class="link" href="https://github.com/nizaelvalente/landing_page_back-nodejs"
+                                target="_blank">Ver no GitHub - Back</a>
+                            <a class="link" href="https://escalaparaexpedientepresencial.nizael.com.br"
+                                target="_blank">Ver na web</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-project">
+                    <img src="./assets/images/viagens-01.png" alt="" class="image-project">
+                    <div class="card-content">
+                        <h4 class="title-card">CALENDÁRIO DE VIAGENS</h4>
+                        <div class="description-content">
+                            <p class="description-card">Este projeto consiste em uma APLICAÇÃO FRONT-END que consome uma
+                                API do IBGE.</p>
+                            <p class="description-card">Com ele é possivel criar um calendário com suas futuras viagens.
+                            </p>
+                        </div>
+
+                        <h4 class="sub-title-card">As tecnologias usadas em seu desenvolvimento foram:</h4>
+
+                        <ul class="list-technology">
+                            <li>Javascript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <div class="links">
+                            <a class="link" href="https://github.com/nizaelvalente/landing_page_front"
+                                target="_blank">Ver no GitHub - Front</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contacts" id="contacts">
+            <header class="header-section">
+                <h2 class="title-section">Contatos</h2>
+                <div class="arrow"></div>
+            </header>
+            <div class="content-contacts">
+                <div class="contacts">
+                    <div class="title-contacts">
+                        Como você prefere falar comigo?
+                    </div>
+                    <div class="content-contact">
+                        <a href="tel:+5591993920523" class="contact-item">
+                            <img src="./assets/icons/phone.svg" alt="telefone">
+                            <span>(91) 99392-0523</span>
+                        </a>
+                        <a href="https://wa.me/5591993920523" class="contact-item">
+                            <img src="./assets/icons/whatsapp.svg" alt="whatsapp">
+                            <span>(91) 99392-0523</span>
+                        </a>
+                        <a href="mailto:nizaelvalente@gmail.com" class="contact-item">
+                            <img src="./assets/icons/email.svg" alt="email">
+                            <span> nizaelvalente@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="social">
+                    <div class="title-contacts">
+                        Repositórios e Redes sociais
+                    </div>
+                    <div class="social-content">
+                        <a href="https://github.com/nizaelvalente" target="_blank" class="social-item">
+                            <img src="./assets/icons/github.svg" alt="github">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nizaelvalente/" target="_blank" class="social-item">
+                            <img src="./assets/icons/linkedin.svg" alt="linkedin">
+                            <span>Linkedin</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="chat" id="chat">
+                <header class="header-chat">
+                    <h2>Deixe uma mensagem</h2>
+                </header>
+                <form id="form">
+                    <input type="text" class="input-chat" name="name" placeholder="Digite seu nome" required>
+                    <textarea name="message" id="message" cols="10" rows="10" class="text-area" required
+                        placeholder="Escreva sua mensagem"></textarea>
+                    <button class="button-chat">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="about-me" id="about-me">
+            <header class="header-section">
+                <h2 class="title-section">Sobre Mim</h2>
+                <div class="arrow"></div>
+            </header>
+            <div class="about-content">
+                <h3>Sou desenvolvedor web com conhecimento avançado nas seguintes tecnologias:</h3>
+                <ul>
+                    <li>
+                        <img src="./assets/icons/javascript.svg" alt="JavaScript">
+                        JavaScript
+                    </li>
+                    <li>
+                        <img src="./assets/icons/reactjs.svg" alt="Reactjs">
+                        Reactjs
+                    </li>
+                    <li>
+                        <img src="./assets/icons/nodejs.svg" alt="Nodejs">
+                        Nodejs
+                    </li>
+                    <li>
+                        <img src="./assets/icons/mongodb.svg" alt="MonogoDB">
+                        MonogoDB
+                    </li>
+                    <li>
+                        <img src="./assets/icons/angularjs.svg" alt="Angular">
+                        Angular
+                    </li>
+                    <li>
+                        <img src="./assets/icons/socket.svg" alt="">
+                        Socket.io
+                    </li>
+                    <li>
+                        <img src="./assets/icons/html-5.svg" alt="">
+                        HTML
+                    </li>
+                    <li>
+                        <img src="./assets/icons/css3.svg" alt="">
+                        CSS
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Desenvoldivo por: Nizael Valente</h3>
+        <div class="footer-body">
+            <h4 class="sub-title-card">As tecnologias usadas em seu desenvolvimento foram:</h4>
+            <ul>
+                <li>Javascript</li>
+                <li>Ejs</li>
+                <li>Nodejs</li>
+                <li>jquery</li>
+                <li>Socket.io</li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-body">
+            <h3>Obrigado por sua mensagem.</h3>
+            <button id="close-modal">Fechar</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./scripts/index.js"></script>
+</body>
+
+</html>
